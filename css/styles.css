@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(255,210,125);
+}
+
+h1	{
+    color: #6cbcfd;
+    font-family: arial, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    }
+
+
+th,td {
+        border: 1px solid black;
+    }
