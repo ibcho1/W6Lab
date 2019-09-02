@@ -10,25 +10,46 @@
 </head>
 
 <body>
-    
-    <h2><img src="logo.png" height='35' width="35"><a href="/">Home</a></h2>
-    <h2><a href="listTask.html">List My Tasks</a></h2><br>
+    <h2><img src="logo.png" height='35' width="35"> </h2>
+
+    <block>
+        <a href="/"> Home </a>
+        <a href="listTask.html">List My Tasks</a><br>
+    </block>
+
     <form action="/addThisTask" method="POST">
         <h3>
-            Task Name 
-            <input type="text" name="taskName"/> 
+            Task Name
+            <input type="text" name="taskName" />
         </h3>
 
         <h3>
-            Task Due 
-            <input type="date" name="taskDue"/> 
+            Task Due
+            <input type="date" name="taskDue" />
         </h3>
 
         <h3>
-            Task Desc 
-            <input type="text" name="taskDesc"/> 
+            Assign To
+            <input type="text" name="assignTo" />
         </h3>
-        
+
+        <h3>
+            Task Desc
+            <input type="text" name="taskDesc" />
+        </h3>
+
+        <h3>
+            Task Status
+            <div>
+                <input type="checkbox" name="taskStatus" value="InProgress">
+                <label for="InProgress">In Progress</label>
+              </div>
+              <div>
+                <input type="checkbox" name="taskStatus" value="complete">
+                <label for="complete">Complete</label>
+              </div>
+        </h3>
+
         <br>
         <button>Enter Task</button>
     </form>

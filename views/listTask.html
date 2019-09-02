@@ -18,15 +18,21 @@
 
     <table>
         <tr>
+            <th>Task ID</th>
             <th>Task Name</th>
             <th>Due Date</th>
+            <th>Assign To</th>
             <th>Task Description</th>
+            <th>Task Progress</th>
         </tr>
         <% for (let i =0; i < task.length; i++) { %>
         <tr>
-            <td><%= task[i].taskName %></td>
+            <td><%= task[i].taskID %></td>
             <td><%= task[i].taskDue %></td>
+            <td><%= task[i].assignTo %></td>
             <td><%= task[i].taskDesc %></td>
+            <td><%= task[i].taskDesc %></td>
+            <td><%= task[i].taskStatus %></td>
         </tr>
         <% } %>
     </table>
